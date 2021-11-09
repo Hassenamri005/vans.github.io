@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+
+
+/*  ------------  Navbar  ------------ */
+.header{
+    width: 100%;
+    height: 100vh;
+    background-image: url('/images/1.jpg');
+    background-size: 100% 100%;
+}
+.navbar{
+    width: 80%;
+    height: 90px;
+    padding: 0;
+    margin: auto;
+    font-family: 'Roboto', sans-serif;
+    background-color: transparent;
+    border-bottom: 1px solid rgb(187, 187, 187);
+}
+.title{
+    width: 50%;
+    height: 100%
+    ;
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.title .logo{
+    background-color: red;
+    padding: 0;
+    margin: 0;
+    width: 30%;
+}
+.logo h1{
+    height: 100%;
+    padding: 18px;
+    text-align: center;
+}
+.logo h1 a{
+    text-decoration: none;
+    color: white;
+}
+.title .search-box{
+    width: 70%;
+}
+.search-box i{
+    height: 100%;
+    width: 10%;
+    margin: 0;
+    text-align: right;
+    padding-top: 33px;
+    color: white;
+}
+.search-box input[type="search"] {
+    border: none;
+    background: none;
+    height: 100%;
+    width: 80%;
+    padding: 14px;
+    color: white;
+    outline: none !important;
+}
+.search-box input[type="search"]::placeholder {
+    color: white;
+}
+
+
+.menu{
+    width: 50%;
+}
+.menu ul{
+    height: 100%;
+    margin: auto;
+    list-style: none;
+    display: flex;
+}
+
+.menu ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 14px 16px;
+}
+.menu ul li a:hover{
+    background-color: red;
+}
+.menu ul li a i {
+    margin-left: 3px;
+}
+.menu ul li a .fa-store-alt{
+    position: relative;
+}
+.menu ul li a .badge-danger {
+    position: absolute;
+}
+.header .navbar:nth-child(2) {
+    border-bottom: none;
+    align-items: center;
+}
+.header .navbar:nth-child(2) ul{
+    padding: 15px;
+    height: 100%;
+    margin: 0 auto;
+    list-style: none;
+    display: flex;
+    text-align: center;
+}
+.header .navbar:nth-child(2) ul li{
+    padding: 14px 16px;
+}
+.header .navbar:nth-child(2) ul li:hover{
+    background-color: red;
+}
+.header .navbar:nth-child(2) ul li a{
+    text-decoration: none;
+    padding: 14px 16px;
+    color: white;
+}
+
+.parag {
+    width: 70%;
+    height: 180px;
+    color: white;
+    margin: 80px auto;
+    
+}
+.parag h1{
+    font-family: 'Roboto', sans-serif;
+}
+.parag p {
+    width: 60%;
+    letter-spacing: 1px;
+    font-weight: 500;
+}
+
+.register-now {
+    text-decoration: none;
+    color: white;
+    background-color: red;
+    padding: 14px 16px;
+    margin-top: 30px;
+}
+.register-now:hover{
+    color: white;
+    text-decoration: none;
+}
+/*  ------------  Navbar end  --------------- */
+
+/*  ------------  FEATURED PRODUCTS  ------------ */
+.section-title{
+    width: 100%;
+    text-align: center;
+    padding-top: 35px;
+    font-family: 'Roboto', sans-serif;
+}
+.section-title .section-sub-title{
+    color: gray;
+}
+.section-title .section-sub-title input{
+    margin-right: 8px;
+}
+
+
+.my-card-group{
+    display: flex;
+    text-align: center;
+    margin-top: 30px;
+    font-family: 'Roboto', sans-serif;
+}
+.my-card{
+    width: 25%;
+    margin: 0px;
+    height: 330px;
+    border-radius: 2px;
+    border: 0.8px solid rgb(233, 231, 231);
+}
+.my-card:hover{
+    box-shadow: 0px 2px 10px 0px rgb(209, 208, 208);
+}
+.my-card .card-img{
+    width: 100%;
+    image-resolution: initial;
+}
+.my-card hr{
+    width: 20px;
+    color: red;
+    background-color: red;
+    height: 2px;
+    margin: auto;
+}
+.my-card .card-img img{
+    width: 100%;
+    height: 200px;
+}
+.card-title{
+    padding: 5px;
+}
+.card-price{
+    margin-top: 15px;
+}
+
+
+.my-card-group2{
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+}
+.my-card-group2 .my-card{
+    width: 60%;
+    display: flex;
+}
+.my-card-group2 .my-card .card-title{
+    width: 50%;
+    height: 50%;
+    margin: auto;
+}
+.my-card-group2 .my-card .card-title h3{
+    text-align: center;
+    padding: 14px;
+    text-align: left;
+    word-break: break-word;
+}
+.my-card-group2 .my-card .card-title hr{
+    height: 2px;
+    width: 50px;
+    background-color: red;
+}
+.my-card-group2 .my-card .card-img{
+    margin-top: 50px;
+    width: 45%;
+}
+@media screen and (max-width: 800px) {
+    .my-card-group{
+        flex-direction: column;
+    }
+    .my-card{
+        width: 80%;
+        margin: auto;
+    }
+}
+
+.footer{
+    margin-top: 40px;
+    width: 100%;
+    height: 80px;
+    background-color: black;
+    text-align: center;
+    color: rgb(175, 175, 175);
+    font-family: 'Roboto', sans-serif;
+}
+.footer p{
+    height: 100%;
+    padding-top: 35px;
+}
+/*  ------------  FEATURED PRODUCTS end  ------------ */
+/*  ------------    ------------ */
+/*  ------------    ------------ */
+/*  ------------    ------------ */
